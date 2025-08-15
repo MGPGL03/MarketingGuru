@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>KSA Ad Performance Report July 2025</title>
+<style>
+  :root { --bg:#0f172a; --card:#111827; --muted:#94a3b8; --pos:#16a34a; --neg:#dc2626; --pri:#2563eb; }
+  body{margin:0;background:#0b1020;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;color:#e5e7eb}
+  .wrap{max-width:1000px;margin:0 auto;padding:24px}
+ header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Mantiene el título a la izq. y logo a la der. */
+  margin-bottom: 16px;
+}
+
+  .logo {
+  height: 180px;
+  width: auto;
+  display: block;
+}
+
+  h1{font-size:20px;margin:0}
+  .tabbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+  .tabbar button{background:#111827;border:1px solid #243048;color:#e5e7eb;padding:8px 12px;border-radius:10px;cursor:pointer}
+  .tabbar button.active{background:#2563eb;border-color:#2563eb}
+  .card{background:#0f172a;border:1px solid #1f2a44;border-radius:16px;padding:16px;margin-bottom:16px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.kpi { background:#111827; border:1px solid #243048; border-radius:14px; padding:12px }
+.kpi-label { font-size:12px; color:#94a3b8; margin-bottom:6px }
+.kpi-main { display:flex; align-items:baseline; gap:8px }
+.kpi .curr { font-weight:700; font-size:18px }
+.kpi-change { font-size:12px; color:#e5e7eb; padding:2px 6px; border-radius:6px; border:1px solid #2b3b63 }
+.kpi-change.pos { color:var(--pos); border-color:rgba(22,163,74,.5) }
+.kpi-change.neg { color:var(--neg); border-color:rgba(220,38,38,.5) }
+.kpi-extra { margin-top:6px; color:#94a3b8; font-size:12px }
+
+  .muted{color:#94a3b8}
+  .section-title{font-weight:700;margin:0 0 8px 0}
+  .hide{display:none}
+  a.btn{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid #2b3b63;text-decoration:none;color:#e5e7eb}
+  a.btn:hover{border-color:#2563eb}
+  table{width:100%;border-collapse:collapse}
+  th,td{border:1px solid #243048;padding:8px;font-size:14px}
+  th{background:#111827}
+  footer{margin-top:24px;color:#94a3b8;font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+ <header>
+  <h1>KSA Ad Performance Report July 2025</h1>
+  <img src="https://i.postimg.cc/02HvTnF8/MG-LOGO-02.png" alt="Logo" class="logo">
+</header>
+
+
+  <div class="tabbar">
+    <button data-tab="summary" class="active">Summary</button>
+    <button data-tab="google">Google Ads</button>
+    <button data-tab="facebook">Facebook Ads</button>
+    <button data-tab="insights">Insights</button>
+  </div>
+
+  <section id="tab-summary" class="card">
+    <h2 class="section-title">Summary</h2>
+    <div class="grid">
+      
+    <div class="kpi">
+      <div class="kpi-label">Google • Impressions</div>
+      <div class="kpi-main">
+        <span class="curr">38,471</span>
+        <span class="kpi-change pos">135.0%</span>
+      </div>
+      
+    </div>
+  
+      
+    <div class="kpi">
+      <div class="kpi-label">Google • Clicks</div>
+      <div class="kpi-main">
+        <span class="curr">1,204</span>
+        <span class="kpi-change pos">53.2%</span>
+      </div>
+      
+    </div>
+  
+      
+    <div class="kpi">
+      <div class="kpi-label">Google • Conversions</div>
+      <div class="kpi-main">
+        <span class="curr">18.983</span>
+        <span class="kpi-change pos">18.5%</span>
+      </div>
+      
+    </div>
+  
+      
+    <div class="kpi">
+      <div class="kpi-label">Google • Spend</div>
+      <div class="kpi-main">
+        <span class="curr">THB 11,853.27</span>
+        <span class="kpi-change pos">6.8%</span>
+      </div>
+      
+    </div>
+  
+      
+    <div class="kpi">
+      <div class="kpi-label">Google • Cost / Conversion</div>
+      <div class="kpi-main">
+        <span class="curr">THB 624.42</span>
+        <span class="kpi-change neg">-9.9%</span>
+      </div>
+      
+    </div>
+  
+
+      
+    <div class="kpi">
+      <div class="kpi-label">Facebook • Impressions</div>
+      <div class="kpi-main">
+        <span class="curr">147,473</span>
+        <span class="kpi-change neg">-8.5%</span>
+      </div>
+      
+    </div>
+  
+      
+    <div class="kpi">
+      <div class="kpi-label">Facebook • Clicks</div>
+      <div class="kpi-main">
+        <span class="curr">2,775</span>
+        <span class="kpi-change pos">11.6%</span>
+      </div>
+      
+    </div>
+  
+      
+    <div class="kpi">
+      <div class="kpi-label">Facebook • Leads</div>
+      <div class="kpi-main">
+        <span class="curr">4</span>
+        <span class="kpi-change neg">-33.3%</span>
+      </div>
+      
+    </div>
+  
+      
+    <div class="kpi">
+      <div class="kpi-label">Facebook • Spend</div>
+      <div class="kpi-main">
+        <span class="curr">THB 14,362.55</span>
+        <span class="kpi-change neg">-12.1%</span>
+      </div>
+      
+    </div>
+  
+      
+    <div class="kpi">
+      <div class="kpi-label">Facebook • Cost / Lead</div>
+      <div class="kpi-main">
+        <span class="curr">THB 3,590.64</span>
+        <span class="kpi-change pos">31.8%</span>
+      </div>
+      
+    </div>
+  
+    </div>
+  </section>
+
+  <section id="tab-google" class="card hide">
+    <h2 class="section-title">Google Ads</h2>
+    <div class="grid">
+      
+    <div class="kpi">
+      <div class="kpi-label">Impressions</div>
+      <div class="kpi-main">
+        <span class="curr">38,471</span>
+        <span class="kpi-change pos">135.0%</span>
+      </div>
+      
+    </div>
+  
+      
+    <div class="kpi">
+      <div class="kpi-label">Clicks</div>
+      <div class="kpi-main">
+        <span class="curr">1,204</span>
+        <span class="kpi-change pos">53.2%</span>
+      </div>
+      
+    </div>
+  
+      
+    <div class="kpi">
+      <div class="kpi-label">Conversions</div>
+      <div class="kpi-main">
+        <span class="curr">18.983</span>
+        <span class="kpi-change pos">18.5%</span>
+      </div>
+      
+    </div>
+  
+      
+    <div class="kpi">
+      <div class="kpi-label">Spend</div>
+      <div class="kpi-main">
+        <span class="curr">THB 11,853.27</span>
+        <span class="kpi-change pos">6.8%</span>
+      </div>
+      
+    </div>
+  
+      
+    <div class="kpi">
+      <div class="kpi-label">CTR</div>
+      <div class="kpi-main">
+        <span class="curr">3.1%</span>
+        <span class="kpi-change neg">-34.8%</span>
+      </div>
+      
+    </div>
+  
+      
+    <div class="kpi">
+      <div class="kpi-label">Cost / Conversion</div>
+      <div class="kpi-main">
+        <span class="curr">THB 624.42</span>
+        <span class="kpi-change neg">-9.9%</span>
+      </div>
+      
+    </div>
+  
+    </div>
+<p class="muted">Top Campaign: Per_MAX_คู่แข่ง</p>
+<h3 class="section-title" style="margin-top:16px">Best Performing Campaign</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Campaign</th>
+      <th>Spend</th>
+      <th>Conversions</th>
+      <th>Cost / Conv.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Per_MAX_คู่แข่ง</td>
+      <td>THB 2,852.07</td>
+      <td>9</td>
+      <td>THB 316.90</td>
+    </tr>
+  </tbody>
+</table>
+
+  </section>
+
+  <section id="tab-facebook" class="card hide">
+    <h2 class="section-title">Facebook Ads</h2>
+    <div class="grid">
+      
+    <div class="kpi">
+      <div class="kpi-label">Impressions</div>
+      <div class="kpi-main">
+        <span class="curr">147,473</span>
+        <span class="kpi-change neg">-8.5%</span>
+      </div>
+      
+    </div>
+  
+      
+    <div class="kpi">
+      <div class="kpi-label">Clicks</div>
+      <div class="kpi-main">
+        <span class="curr">2,775</span>
+        <span class="kpi-change pos">11.6%</span>
+      </div>
+      
+    </div>
+  
+      
+    <div class="kpi">
+      <div class="kpi-label">Leads</div>
+      <div class="kpi-main">
+        <span class="curr">4</span>
+        <span class="kpi-change neg">-33.3%</span>
+      </div>
+      
+    </div>
+  
+      
+    <div class="kpi">
+      <div class="kpi-label">Spend</div>
+      <div class="kpi-main">
+        <span class="curr">THB 14,362.55</span>
+        <span class="kpi-change neg">-12.1%</span>
+      </div>
+      
+    </div>
+  
+      
+    <div class="kpi">
+      <div class="kpi-label">CTR</div>
+      <div class="kpi-main">
+        <span class="curr">1.9%</span>
+        <span class="kpi-change pos">22.0%</span>
+      </div>
+      
+    </div>
+  
+      
+    <div class="kpi">
+      <div class="kpi-label">Cost / Lead</div>
+      <div class="kpi-main">
+        <span class="curr">THB 3,590.64</span>
+        <span class="kpi-change pos">31.8%</span>
+      </div>
+      
+    </div>
+  
+    </div>
+
+    <h3 class="section-title" style="margin-top:16px">Top Creatives</h3>
+    <table>
+      <thead><tr><th>Creative</th><th>Spend</th><th>CPL</th><th>👍</th><th>💬</th><th>↗</th></tr></thead>
+      <tbody>
+        
+            <tr>
+              <td>Video: 25-54 Ko Samui, Phuket : Shopper</td>
+              <td>THB 3,529.50</td>
+              <td>THB 1,764.75</td>
+              <td>8</td>
+              <td>5</td>
+              <td>4</td>
+            </tr>
+          
+            <tr>
+              <td>Corousel: 25-54 Ko Samui, Phuket : Shopper</td>
+              <td>THB 3,204.72</td>
+              <td>THB 3,204.72</td>
+              <td>9</td>
+              <td>6</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td>tesy 3 July- 25-45 ไทย-มาเลเซีย-สิงคโปร์ สนใจดำน้ำ Carousel</td>
+              <td>THB 2,725.94</td>
+              <td>THB 2,725.94</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+          
+      </tbody>
+    </table>
+  </section>
+
+  <section id="tab-insights" class="card hide">
+    <h2 class="section-title">Executive Insights</h2>
+    <div class="muted" style="white-space:pre-wrap">—</div>
+  </section>
+
+
+
+<script>
+  const tabs = document.querySelectorAll('.tabbar button');
+  function showTab(name){
+    document.querySelectorAll('section[id^="tab-"]').forEach(s=>s.classList.add('hide'));
+    document.getElementById('tab-'+name).classList.remove('hide');
+    tabs.forEach(b=>b.classList.toggle('active', b.dataset.tab===name));
+  }
+  tabs.forEach(b=>b.addEventListener('click', ()=>showTab(b.dataset.tab)));
+  showTab('summary');
+
+
+</script>
+</body>
+</html>
